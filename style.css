@@ -1,0 +1,264 @@
+/* Reset default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  animation: dynamicBackground 20s infinite;
+}
+
+
+@keyframes dynamicBackground {
+  0% { background-color: #ffcc00; } /* Start color */
+  25% { background-color: #ff6699; } /* Color after 5 seconds */
+  50% { background-color: #99ccff; } /* Color after 10 seconds */
+  75% { background-color: #66ff99; } /* Color after 15 seconds */
+  100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
+}
+
+.skills-list {
+  list-style-type: square;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 23%;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: #000;
+}
+
+
+
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.project-image img {
+  width: 20px;
+  height: auto;
+  border-radius: 5px;
+  /* Add any additional styling properties as needed */
+}
+
+
+.project-info {
+  margin-left: 10px;
+}
+
+.project-title {
+  margin-bottom: 5px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #0000EE; /* Blue color for link */
+}
+
+.connect {
+  margin-top: 20px;
+}
+
+.connect h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#connect {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+#connect h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#certificates {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+#certificates h2 {
+  margin-bottom: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificates-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+
+
+
+.certificate-list {
+  list-style-type: decimal;
+  padding-left: 0;
+}
+
+.certificate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.certificate-info {
+  text-align: left;
+}
+
+.certificate-title {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.certificate-details {
+  margin-bottom: 10px;
+  color: #000;
+  white-space: pre-line;
+}
+
+.certificate-year,
+.certificate-issuer {
+  display: block;
+}
+
+.certificate-link {
+  text-decoration: none;
+  color: #0000EE;
+  font-weight: bold;
+}
+
+
+.linkedin-container {
+  display: inline-block;
+}
+
+.linkedin-link {
+  text-decoration: none;
+  color: #0000EE;
+  padding: 10px;
+  border: 1px solid #0000EE;
+  border-radius: 4px;
+}
+
+.linkedin-link:hover {
+  background-color: #0000EE;
+  color: #fff;
+}
+
+
+
+
+
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #F4F6F8;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+/* Header */
+header {
+  background-color: #192A56;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  padding: 5px;
+}
+
+/* Main sections */
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 20px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact form */
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  display: block;
+  padding: 10px;
+  background-color: #2C3A47;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1E293B;
+}
+
+/* Footer */
+footer {
+  background-color: #2C3A47;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
