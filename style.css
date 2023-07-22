@@ -7,10 +7,10 @@ body, h1, h2, p, ul, li {
 }
 
 @keyframes dynamicBackground {
-  0% { background-color: #ffcc00; } /* Start color */
-  25% { background-color: #ff6699; } /* Color after 5 seconds */
-  50% { background-color: #008000; } /* Color after 10 seconds */
-  75% { background-color: #66ff99; } /* Color after 15 seconds */
+  0% { background-color: #ffcc00; } /* Start color (yellow) */
+  25% { background-color: #ffa500; } /* Color after 5 seconds (orange) */
+  50% { background-color: #ff69b4; } /* Color after 10 seconds (reddish pink) */
+  75% { background-color: #00ced1; } /* Color after 15 seconds (sea blue) */
   100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
 }
 
@@ -31,18 +31,15 @@ body, h1, h2, p, ul, li {
 }
 
 .skill {
-  width: 23%;
+  width: calc(25% - 10px); /* Adjust width to fit four skills in one line with some spacing */
   margin-bottom: 10px;
   padding: 8px 12px;
   border-radius: 20px;
   background-color: #000;
-}
-
-/* Additional styles for skills */
-.skills-list .skill {
+  color: #fff; /* Text color */
   font-weight: bold;
   font-style: italic;
-  color: #000; /* Black color */
+  text-align: center; /* Center the text within the skill box */
 }
 
 .project {
