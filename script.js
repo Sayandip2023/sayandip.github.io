@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const typedText = new Typed('#typed-text', {
-        strings: ['Developer', 'Machine Learning Engineer'], // Add your desired words here
-        typeSpeed: 100, // Typing speed in milliseconds
-        backSpeed: 50, // Backspacing speed in milliseconds
+        strings: ['Learner','Developer', 'Deep Learning Engineer'], 
+        typeSpeed: 100, 
+        backSpeed: 50, 
         loop: true // Whether to loop the animation
     });
 
@@ -92,11 +92,3 @@ $(document).ready(function () {
     return false;
   });
 });
-
-const typedAbout = new Typed('#typed-about', {
-    strings: ['Learner', 'Developer', 'Deep Learning Engineer'], // Words to slide
-    typeSpeed: 100, // Typing speed in milliseconds
-    backSpeed: 50, // Backspacing speed in milliseconds
-    loop: true // Whether to loop the animation
-});
-
