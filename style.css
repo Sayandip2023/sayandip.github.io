@@ -5,6 +5,14 @@ body, h1, h2, p, ul, li {
   animation: dynamicBackground 20s infinite;
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const typedText = new Typed('#typed-text', {
+    strings: ['Developer', 'Programmer', 'Machine Learning Engineer','Occasional Singer'],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true
+  });
+});
 
 @keyframes dynamicBackground {
   0% { background-color: #ffcc00; } /* Start color */
