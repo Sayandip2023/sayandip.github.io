@@ -9,9 +9,9 @@ body, h1, h2, p, ul, li {
 @keyframes dynamicBackground {
   0% { background-color: #ffcc00; } /* Start color */
   20% { background-color: #ff6699; } /* Color after 4 seconds */
-  40% { background-color: #008000; } /* Color after 8 seconds */
-  60% { background-color: #ff9999; } /* Color after 12 seconds */
-  80% { background-color: #3366cc; } /* Color after 16 seconds */
+  40% { background-color: #3366cc; } /* Color after 8 seconds */
+  60% { background-color: #9933cc; } /* Color after 12 seconds */
+  80% { background-color: #ff9933; } /* Color after 16 seconds */
   100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
 }
 
