@@ -5,21 +5,12 @@ body, h1, h2, p, ul, li {
   animation: dynamicBackground 20s infinite;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const typedText = new Typed('#typed-text', {
-    strings: ['Developer', 'Programmer', 'Machine Learning Engineer','Occasional Singer'],
-    typeSpeed: 100,
-    backSpeed: 50,
-    loop: true
-  });
-});
-
 @keyframes dynamicBackground {
   0% { background-color: #ffcc00; } /* Start color */
-  25% { background-color: #ff6699; } /* Color after 5 seconds */
-  50% { background-color: #99ccff; } /* Color after 10 seconds */
-  75% { background-color: #66ff99; } /* Color after 15 seconds */
-  100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
+  25% { background-color: #ff6699; } /* Color after 7 seconds */
+  50% { background-color: #99ccff; } /* Color after 5 seconds */
+  75% { background-color: #66ff99; } /* Color after 8 seconds */
+  100% { background-color: #ffcc00; } /* Color after 9 seconds (back to start) */
 }
 
 .skills-list {
