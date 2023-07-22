@@ -37,3 +37,13 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
         alert("An error occurred. Please try again.");
     });
 });
+
+// Additional JavaScript for the Typed.js animation
+document.addEventListener("DOMContentLoaded", function () {
+    const typedText = new Typed('#typed-text', {
+        strings: ['Developer', 'Designer', 'Machine Learning Engineer'],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true
+    });
+});
