@@ -8,10 +8,9 @@ body, h1, h2, p, ul, li {
 
 @keyframes dynamicBackground {
   0% { background-color: #ffcc00; } /* Start color */
-  20% { background-color: #ff6699; } /* Color after 4 seconds */
-  40% { background-color: #3366cc; } /* Color after 8 seconds */
-  60% { background-color: #9933cc; } /* Color after 12 seconds */
-  80% { background-color: #ff9933; } /* Color after 16 seconds */
+  25% { background-color: #ff6699; } /* Color after 5 seconds */
+  50% { background-color: #008000; } /* Color after 10 seconds */
+  75% { background-color: #66ff99; } /* Color after 15 seconds */
   100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
 }
 
@@ -22,7 +21,22 @@ body, h1, h2, p, ul, li {
 }
 
 /* Existing styles for skills */
-/* ... (your existing CSS code) ... */
+.skills-list {
+  list-style-type: square;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 23%;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: #000;
+}
 
 /* Additional styles for skills */
 .skills-list .skill {
@@ -37,14 +51,12 @@ body, h1, h2, p, ul, li {
   margin-bottom: 20px;
 }
 
-
 .project-image img {
   width: 20px;
   height: auto;
   border-radius: 5px;
   /* Add any additional styling properties as needed */
 }
-
 
 .project-info {
   margin-left: 10px;
@@ -99,9 +111,6 @@ body, h1, h2, p, ul, li {
   margin-right: 10px;
 }
 
-
-
-
 .certificate-list {
   list-style-type: decimal;
   padding-left: 0;
@@ -139,7 +148,6 @@ body, h1, h2, p, ul, li {
   font-weight: bold;
 }
 
-
 .linkedin-container {
   display: inline-block;
 }
@@ -156,11 +164,6 @@ body, h1, h2, p, ul, li {
   background-color: #0000EE;
   color: #fff;
 }
-
-
-
-
-
 
 /* Global styles */
 body {
@@ -263,3 +266,4 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 10px 0;
+}
