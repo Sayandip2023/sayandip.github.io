@@ -3,6 +3,7 @@ body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
   animation: dynamicBackground 20s infinite;
+  color: #333;
 }
 
 @keyframes dynamicBackground {
@@ -191,7 +192,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #555;
+  color: #333;
 }
 
 /* Header */
@@ -226,6 +227,7 @@ section {
 
 h2 {
   margin-bottom: 10px;
+  color: #333;
 }
 
 /* Projects */
@@ -263,9 +265,6 @@ form button {
 
 form button:hover {
   background-color: #1E293B;
-}
-h1, h2, h3, h4, h5, h6 {
-  color: #333; /* Darker shade color for main headings */
 }
 /* Footer */
 footer {
