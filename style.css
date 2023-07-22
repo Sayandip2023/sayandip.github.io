@@ -7,13 +7,13 @@ body, h1, h2, h3, p, ul, li {
 /* Define the colors for changing backgrounds */
 @keyframes dynamicBackground {
   0% { background-color: #ffcc00; } /* Start color - Yellow */
-  15% { background-color: #ff6699; } /* Color after 3 seconds - Pink */
-  30% { background-color: #3366cc; } /* Color after 6 seconds - Blue */
-  45% { background-color: #ff9933; } /* Color after 9 seconds - Orange */
-  60% { background-color: #cc33cc; } /* Color after 12 seconds - Light Purple */
-  75% { background-color: #99cc66; } /* Color after 15 seconds - Light Green */
-  90% { background-color: #ff6666; } /* Color after 18 seconds - Light Red */
-  100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) - Yellow */
+  14.29% { background-color: #ff6699; } /* Color after 7 seconds - Pink */
+  28.57% { background-color: #3366cc; } /* Color after 14 seconds - Blue */
+  42.86% { background-color: #ff9933; } /* Color after 21 seconds - Orange */
+  57.14% { background-color: #cc33cc; } /* Color after 28 seconds - Light Purple */
+  71.43% { background-color: #ff6666; } /* Color after 35 seconds - Light Red */
+  85.71% { background-color: #ff9966; } /* Color after 42 seconds - Light Orange */
+  100% { background-color: #ffcc00; } /* Color after 49 seconds (back to start) - Yellow */
 }
 
 /* Apply dynamic background to the body */
