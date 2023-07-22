@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Initialize Typed.js animation
     const typedText = new Typed('#typed-text', {
         strings: ['Developer', 'Machine Learning Engineer'], // Add your desired words here
         typeSpeed: 100, // Typing speed in milliseconds
@@ -7,16 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true // Whether to loop the animation
     });
 
-    // Contact form submission
+
     document.getElementById("contact-form").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent form submission
 
-        // Get form values
         var name = document.getElementById("name").value;
         var email = document.getElementById("email").value;
         var message = document.getElementById("message").value;
 
-        // Perform validation (you can add more checks as needed)
         if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
             alert("Please fill in all fields.");
             return;
@@ -47,9 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-// Your existing JavaScript code
 
-// Smooth page transitions
 $(document).ready(function () {
   const body = $('body');
 
@@ -66,7 +61,6 @@ $(document).ready(function () {
     setTransitionClass('page-transition-entered');
   }
 
-  // Detect when a link is clicked
   $('a').click(function (e) {
     if ($(this).attr('href').startsWith('#')) {
       e.preventDefault();
@@ -99,11 +93,10 @@ $(document).ready(function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const typedAbout = new Typed("#typed-about", {
-    strings: ["learner", "developer", "Deep Learning Engineer"],
+const typedAbout = new Typed('#typed-about', {
+    strings: ['Learner', 'Developer', 'Deep Learning Engineer'], // Words to slide
     typeSpeed: 100, // Typing speed in milliseconds
     backSpeed: 50, // Backspacing speed in milliseconds
-    loop: true, // Whether to loop the animation
-  });
+    loop: true // Whether to loop the animation
 });
+
