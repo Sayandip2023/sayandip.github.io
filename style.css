@@ -1,54 +1,169 @@
 /* Reset default styles */
-body, h1, h2, h3, p, ul, li {
+body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
+  animation: dynamicBackground 20s infinite;
 }
 
-/* Define the colors for changing backgrounds */
+
 @keyframes dynamicBackground {
   0% { background-color: #ffcc00; } /* Start color */
   25% { background-color: #ff6699; } /* Color after 5 seconds */
-  50% { background-color: #008000; } /* Color after 10 seconds */
+  50% { background-color: #99ccff; } /* Color after 10 seconds */
   75% { background-color: #66ff99; } /* Color after 15 seconds */
   100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
 }
 
-/* Apply dynamic background to the body */
-body {
-  animation: dynamicBackground 20s infinite;
+.skills-list {
+  list-style-type: square;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Heading styles with changing colors */
-h1, h2, h3, h4, h5, h6 {
-  color: #000; /* Default color for headings */
+.skill {
+  width: 23%;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: #000;
 }
 
-/* Add classes to headings for different colors at different animation stages */
-h1.color-1 {
-  color: #ffcc00; /* Color at 0% - Yellow */
+
+
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-h2.color-2 {
-  color: #ff6699; /* Color at 25% - Pink */
+
+.project-image img {
+  width: 20px;
+  height: auto;
+  border-radius: 5px;
+  /* Add any additional styling properties as needed */
 }
 
-h3.color-3 {
-  color: #008000; /* Color at 50% - Green */
+
+.project-info {
+  margin-left: 10px;
 }
 
-h4.color-4 {
-  color: #66ff99; /* Color at 75% - Light Green */
+.project-title {
+  margin-bottom: 5px;
 }
 
-h5.color-5 {
-  color: #ffcc00; /* Color at 100% - Yellow */
+.project-link {
+  text-decoration: none;
+  color: #0000EE; /* Blue color for link */
 }
 
-h6.color-6 {
-  color: #ff6699; /* Color at 100% - Pink */
+.connect {
+  margin-top: 20px;
 }
 
-/* Other styles */
+.connect h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#connect {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+#connect h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#certificates {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+#certificates h2 {
+  margin-bottom: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificates-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+
+
+
+.certificate-list {
+  list-style-type: decimal;
+  padding-left: 0;
+}
+
+.certificate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.certificate-info {
+  text-align: left;
+}
+
+.certificate-title {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.certificate-details {
+  margin-bottom: 10px;
+  color: #000;
+  white-space: pre-line;
+}
+
+.certificate-year,
+.certificate-issuer {
+  display: block;
+}
+
+.certificate-link {
+  text-decoration: none;
+  color: #0000EE;
+  font-weight: bold;
+}
+
+
+.linkedin-container {
+  display: inline-block;
+}
+
+.linkedin-link {
+  text-decoration: none;
+  color: #0000EE;
+  padding: 10px;
+  border: 1px solid #0000EE;
+  border-radius: 4px;
+}
+
+.linkedin-link:hover {
+  background-color: #0000EE;
+  color: #fff;
+}
+
+
+
+
+
 
 /* Global styles */
 body {
@@ -99,6 +214,10 @@ section {
   margin-bottom: 20px;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
 /* Projects */
 .project {
   margin-bottom: 20px;
@@ -138,7 +257,7 @@ form button:hover {
 
 /* Footer */
 footer {
-  background-color: #2C3A47;
+  background-color: #000;
   color: #fff;
   padding: 10px 0;
   text-align: center;
