@@ -98,3 +98,12 @@ $(document).ready(function () {
     return false;
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const typedAbout = new Typed("#typed-about", {
+    strings: ["learner", "developer", "Deep Learning Engineer"],
+    typeSpeed: 100, // Typing speed in milliseconds
+    backSpeed: 50, // Backspacing speed in milliseconds
+    loop: true, // Whether to loop the animation
+  });
+});
