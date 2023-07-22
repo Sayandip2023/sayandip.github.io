@@ -14,10 +14,11 @@ body, h1, h2, p, ul, li {
   100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
 }
 
+/* Override animation color for specific elements */
+header,
 #typed-about {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px; /* Add some spacing from the paragraph */
+  animation: none;
+  background-color: #192A56; /* Set a fixed color for these elements */
 }
 
 /* Existing styles for skills */
