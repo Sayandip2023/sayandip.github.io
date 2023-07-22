@@ -262,3 +262,53 @@ footer {
   padding: 10px 0;
   text-align: center;
 }
+/* Existing CSS styles */
+
+/* Add the following styles for responsiveness */
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px; /* Reduce font size for smaller screens */
+  }
+
+  /* Adjust the size of the certificates icon for smaller screens */
+  .certificates-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  /* Adjust the width of the skills list items for smaller screens */
+  .skill {
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: #000;
+  }
+
+  /* Adjust the width of the project items for smaller screens */
+  .project {
+    flex-wrap: wrap;
+  }
+
+  /* Adjust the width of the project image for smaller screens */
+  .project img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the margin for project information for smaller screens */
+  .project-info {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  /* Adjust the width of the certificate list items for smaller screens */
+  .certificate-info {
+    text-align: center;
+  }
+}
