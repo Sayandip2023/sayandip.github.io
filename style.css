@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
-  color: #ff0000; /* Red color on hover */
+  color: #00FF00; 
 }
 
 /* Projects */
