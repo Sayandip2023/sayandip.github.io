@@ -37,3 +37,14 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
         alert("An error occurred. Please try again.");
     });
 });
+
+// Initialize Typed.js animation
+document.addEventListener("DOMContentLoaded", function () {
+    const typedText = new Typed('#typed-text', {
+        strings: ['Developer', 'Machine Learning Engineer'], // Add your desired words here
+        typeSpeed: 100, // Typing speed in milliseconds
+        backSpeed: 50, // Backspacing speed in milliseconds
+        loop: true // Whether to loop the animation
+    });
+});
+
