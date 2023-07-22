@@ -5,11 +5,10 @@ body, h1, h2, p, ul, li {
   animation: dynamicBackground 20s infinite;
 }
 
-
 @keyframes dynamicBackground {
   0% { background-color: #ffcc00; } /* Start color */
   25% { background-color: #ff6699; } /* Color after 5 seconds */
-  50% { background-color: #99ccff; } /* Color after 10 seconds */
+  50% { background-color: #008000; } /* Color after 10 seconds */
   75% { background-color: #66ff99; } /* Color after 15 seconds */
   100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
 }
