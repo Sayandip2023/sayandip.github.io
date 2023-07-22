@@ -1,7 +1,5 @@
 /* Reset default styles */
-body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
+body {
   animation: dynamicBackground 20s infinite;
 }
 
