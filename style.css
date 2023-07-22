@@ -259,9 +259,9 @@ form button:hover {
   background-color: #1E293B;
 }
 
-/* Footer */
 footer {
-  background-color: #000;
   color: #fff;
   padding: 10px 0;
+  text-align: left;
+  font-weight: bold;
 }
