@@ -47,3 +47,54 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+// Your existing JavaScript code
+
+// Smooth page transitions
+$(document).ready(function () {
+  const body = $('body');
+
+  function setTransitionClass(className) {
+    body.removeClass('page-transition-entering page-transition-entered page-transition-exiting page-transition-exited');
+    body.addClass(className);
+  }
+
+  function handleTransitionStart() {
+    setTransitionClass('page-transition-exiting');
+  }
+
+  function handleTransitionEnd() {
+    setTransitionClass('page-transition-entered');
+  }
+
+  // Detect when a link is clicked
+  $('a').click(function (e) {
+    if ($(this).attr('href').startsWith('#')) {
+      e.preventDefault();
+      const href = $(this).attr('href');
+      handleTransitionStart();
+
+      // Smoothly scroll to the target section
+      $('html, body').animate({
+        scrollTop: $(href).offset().top
+      }, 1000, function () {
+        handleTransitionEnd();
+      });
+    }
+  });
+
+  // Scroll-to-top button
+  const scrollButton = $('#scroll-to-top');
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      scrollButton.fadeIn();
+    } else {
+      scrollButton.fadeOut();
+    }
+  });
+
+  scrollButton.click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  });
+});
