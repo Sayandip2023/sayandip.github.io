@@ -8,9 +8,9 @@ body, h1, h2, p, ul, li {
 
 @keyframes dynamicBackground {
   0% { background-color: #ffcc00; } /* Start color (yellow) */
-  25% { background-color: #ffa500; } /* Color after 5 seconds (orange) */
-  50% { background-color: #ff69b4; } /* Color after 10 seconds (reddish pink) */
-  75% { background-color: #00ced1; } /* Color after 15 seconds (sea blue) */
+  25% { background-color: #ffa500; } 
+  50% { background-color: #fff0e1; } 
+  75% { background-color: #00ced1; } 
   100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
 }
 
