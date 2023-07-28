@@ -1,169 +1,10 @@
-/* Reset default styles */
+
 body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
-  animation: dynamicBackground 20s infinite;
   color: #333;
 }
 
-@keyframes dynamicBackground {
-  0% { background-color: #ffcc00; } /* Start color (yellow) */
-  25% { background-color: #ffa500; } 
-  50% { background-color: #fff0e1; } 
-  75% { background-color: #00ced1; } 
-  100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
-}
-
-/* Override animation color for specific elements */
-header,
-#typed-about {
-  animation: none;
-  background-color: #192A56; /* Set a fixed color for these elements */
-}
-
-/* Existing styles for skills */
-.skills-list {
-  list-style-type: square;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.skill {
-  width: calc(25% - 10px); /* Adjust width to fit four skills in one line with some spacing */
-  margin-bottom: 10px;
-  padding: 8px 12px;
-  border-radius: 20px;
-  background-color: #000;
-  color: 191970; /* Text color */
-  font-weight: bold;
-  font-style: italic;
-  text-align: center; /* Center the text within the skill box */
-}
-
-.project {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.project-image img {
-  width: 20px;
-  height: auto;
-  border-radius: 5px;
-  /* Add any additional styling properties as needed */
-}
-
-.project-info {
-  margin-left: 10px;
-}
-
-.project-title {
-  margin-bottom: 5px;
-}
-
-.project-link {
-  text-decoration: none;
-  color: #0000EE; /* Blue color for link */
-}
-
-.connect {
-  margin-top: 20px;
-}
-
-.connect h3 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-#connect {
-  background-color: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-}
-
-#connect h2 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-#certificates {
-  background-color: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-}
-
-#certificates h2 {
-  margin-bottom: 20px;
-  color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.certificates-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-}
-
-.certificate-list {
-  list-style-type: decimal;
-  padding-left: 0;
-}
-
-.certificate {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.certificate-info {
-  text-align: left;
-}
-
-.certificate-title {
-  margin-bottom: 5px;
-  color: #000;
-}
-
-.certificate-details {
-  margin-bottom: 10px;
-  color: #000;
-  white-space: pre-line;
-}
-
-.certificate-year,
-.certificate-issuer {
-  display: block;
-}
-
-.certificate-link {
-  text-decoration: none;
-  color: #0000EE;
-  font-weight: bold;
-}
-
-.linkedin-container {
-  display: inline-block;
-}
-
-.linkedin-link {
-  text-decoration: none;
-  color: #0000EE;
-  padding: 10px;
-  border: 1px solid #0000EE;
-  border-radius: 4px;
-}
-
-.linkedin-link:hover {
-  background-color: #0000EE;
-  color: #fff;
-}
-
-/* Global styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -184,6 +25,7 @@ a {
 
 /* Header */
 header {
+  text-align: center;
   background-color: #192A56;
   color: #fff;
   padding: 10px 0;
@@ -222,16 +64,124 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
   color: #00FF00; 
 }
 
-/* Projects */
-.project {
-  margin-bottom: 20px;
+/* Skills */
+#skills {
+  overflow: hidden;
+  position: relative;
 }
 
-.project img {
-  max-width: 100%;
+.skills-list {
+  list-style-type: square;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: slideRight 1s forwards;
+}
+
+.skill {
+  width: calc(25% - 10px); /* Adjust width to fit four skills in one line with some spacing */
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #191970; /* Text color */
+  font-weight: bold;
+  font-style: italic;
+  text-align: center; /* Center the text within the skill box */
+}
+
+/* Certificates */
+#certificates {
+  overflow: hidden;
+  position: relative;
+}
+
+.certificate-list {
+  list-style-type: decimal;
+  padding-left: 0;
+  animation: slideRight 1s forwards;
+}
+
+.certificate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.certificate-info {
+  text-align: left;
+}
+
+.certificate-title {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.certificate-details {
+  margin-bottom: 10px;
+  color: #000;
+  white-space: pre-line;
+}
+
+.certificate-year,
+.certificate-issuer {
+  display: block;
+}
+
+.certificate-link {
+  text-decoration: none;
+  color: #0000EE;
+  font-weight: bold;
+}
+
+/* Projects */
+#projects {
+  overflow: hidden;
+  position: relative;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  animation: slideRight 1s forwards;
+}
+
+.project-image img {
+  width: 20px;
   height: auto;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  /* Add any additional styling properties as needed */
+}
+
+.project-info {
+  margin-left: 10px;
+}
+
+.project-title {
+  margin-bottom: 5px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #0000EE; /* Blue color for link */
+}
+
+/* Connect */
+#connect {
+  overflow: hidden;
+  position: relative;
+}
+
+.connect {
+  margin-top: 20px;
+}
+
+.connect h3 {
+  margin-bottom: 10px;
+  color: #333;
 }
 
 /* Contact form */
@@ -262,6 +212,15 @@ form button:hover {
 footer {
   color: #fff;
   padding: 10px 0;
-  text-align: centre;
+  text-align: center;
   font-weight: bold;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
