@@ -122,12 +122,19 @@ header,
 }
 
 
-.project-image img {
-  width: 20px;
-  height: auto;
+.project-image {
+  width: 80px; /* Set a fixed width for project images */
+  height: 100px; /* Adjust the height as needed */
+  overflow: hidden; /* Hide any image overflow */
   border-radius: 5px;
-  /* Add any additional styling properties as needed */
 }
+
+.project-image img {
+  width: 100%; /* Set the width to fill the container */
+  height: 100%; /* Automatically adjust the height to maintain aspect ratio */
+  object-fit: cover; /* Scale the image to cover the container */
+}
+
 
 
 .project-info {
