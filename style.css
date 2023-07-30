@@ -21,120 +21,58 @@ header,
   background-color: #192A56; /* Set a fixed color for these elements */
 }
 
-/* Existing styles for skills */
-.skills-list {
-  list-style-type: square;
-  padding: 0;
-  margin: 0;
+/* Existing styles for skills, certificates, etc. */
+
+/* Projects */
+.project {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.skill {
-  width: calc(25% - 10px); /* Adjust width to fit four skills in one line with some spacing */
-  margin-bottom: 10px;
-  padding: 8px 12px;
-  border-radius: 20px;
-  background-color: #000;
-  color: 191970; /* Text color */
-  font-weight: bold;
-  font-style: italic;
-  text-align: center; /* Center the text within the skill box */
-}
-
-.connect {
-  margin-top: 20px;
-}
-
-.connect h3 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-#connect {
-  background-color: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-}
-
-#connect h2 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-#certificates {
-  background-color: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-}
-
-#certificates h2 {
+  align-items: center;
   margin-bottom: 20px;
-  color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.certificates-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  /* Add any additional styling properties as needed */
 }
 
-.certificate-list {
-  list-style-type: decimal;
-  padding-left: 0;
+.project-info {
+  margin-left: 10px;
 }
 
-.certificate {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.certificate-info {
-  text-align: left;
-}
-
-.certificate-title {
+.project-title {
   margin-bottom: 5px;
-  color: #000;
 }
 
-.certificate-details {
-  margin-bottom: 10px;
-  color: #000;
-  white-space: pre-line;
+.project-link {
+  text-decoration: none;
+  color: #0000EE; /* Blue color for link */
 }
 
-.certificate-year,
-.certificate-issuer {
+/* Contact form */
+form input,
+form textarea {
   display: block;
-}
-
-.certificate-link {
-  text-decoration: none;
-  color: #0000EE;
-  font-weight: bold;
-}
-
-.linkedin-container {
-  display: inline-block;
-}
-
-.linkedin-link {
-  text-decoration: none;
-  color: #0000EE;
+  width: 100%;
   padding: 10px;
-  border: 1px solid #0000EE;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.linkedin-link:hover {
-  background-color: #0000EE;
+form button {
+  display: block;
+  padding: 10px;
+  background-color: #2C3A47;
   color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1E293B;
 }
 
 /* Global styles */
@@ -196,61 +134,11 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
   color: #00FF00; 
 }
 
-/* Projects */
-.project {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.project-image img {
-  width: 20px;
-  height: auto;
-  border-radius: 5px;
-  /* Add any additional styling properties as needed */
-}
-
-.project-info {
-  margin-left: 10px;
-}
-
-.project-title {
-  margin-bottom: 5px;
-}
-
-.project-link {
-  text-decoration: none;
-  color: #0000EE; /* Blue color for link */
-}
-
-/* Contact form */
-form input,
-form textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-form button {
-  display: block;
-  padding: 10px;
-  background-color: #2C3A47;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #1E293B;
-}
+/* Additional styles for the contact section (if needed) */
 
 footer {
   color: #fff;
   padding: 10px 0;
-  text-align: centre;
+  text-align: center;
   font-weight: bold;
 }
