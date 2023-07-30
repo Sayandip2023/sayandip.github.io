@@ -43,32 +43,6 @@ header,
   text-align: center; /* Center the text within the skill box */
 }
 
-.project {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.project-image img {
-  width: 20px;
-  height: auto;
-  border-radius: 5px;
-  /* Add any additional styling properties as needed */
-}
-
-.project-info {
-  margin-left: 10px;
-}
-
-.project-title {
-  margin-bottom: 5px;
-}
-
-.project-link {
-  text-decoration: none;
-  color: #0000EE; /* Blue color for link */
-}
-
 .connect {
   margin-top: 20px;
 }
@@ -224,14 +198,29 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
 
 /* Projects */
 .project {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.project img {
-  max-width: 100%;
+.project-image img {
+  width: 20px;
   height: auto;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  /* Add any additional styling properties as needed */
+}
+
+.project-info {
+  margin-left: 10px;
+}
+
+.project-title {
+  margin-bottom: 5px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #0000EE; /* Blue color for link */
 }
 
 /* Contact form */
