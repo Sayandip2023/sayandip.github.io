@@ -31,7 +31,7 @@ header,
 }
 
 .project-image img {
-  max-width: 100%;
+  max-width: 10%;
   height: auto;
   border-radius: 5px;
   /* Add any additional styling properties as needed */
