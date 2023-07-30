@@ -122,8 +122,8 @@ header,
 }
 
 .project-image {
-  width: 80px; /* Set a fixed width for project images */
-  height: 100px; /* Adjust the height as needed */
+  width: 200px; /* Set a fixed width for project images */
+  height: 150px; /* Adjust the height as needed */
   border-radius: 5px;
   background-size: cover; /* Scale the background image to cover the container */
   background-position: center; /* Center the background image within the container */
