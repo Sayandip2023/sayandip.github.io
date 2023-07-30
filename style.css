@@ -121,21 +121,13 @@ header,
   margin-bottom: 20px;
 }
 
-
 .project-image {
   width: 80px; /* Set a fixed width for project images */
   height: 100px; /* Adjust the height as needed */
-  overflow: hidden; /* Hide any image overflow */
   border-radius: 5px;
+  background-size: cover; /* Scale the background image to cover the container */
+  background-position: center; /* Center the background image within the container */
 }
-
-.project-image img {
-  width: 100%; /* Set the width to fill the container */
-  height: 100%; /* Automatically adjust the height to maintain aspect ratio */
-  object-fit: cover; /* Scale the image to cover the container */
-}
-
-
 
 .project-info {
   margin-left: 10px;
@@ -144,7 +136,6 @@ header,
 .project-title {
   margin-bottom: 5px;
 }
-
 .project-link {
   text-decoration: none;
   color: #0000EE; /* Blue color for link */
