@@ -1,11 +1,9 @@
-/* Reset default styles */
 body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
   animation: dynamicBackground 20s infinite;
   color: #333;
 }
-
 @keyframes dynamicBackground {
   0% { background-color: #ffcc00; } /* Start color (yellow) */
   25% { background-color: #ffa500; } 
@@ -13,15 +11,108 @@ body, h1, h2, p, ul, li {
   75% { background-color: #00ced1; } 
   100% { background-color: #ffcc00; } /* Color after 20 seconds (back to start) */
 }
-
-/* Override animation color for specific elements */
 header,
 #typed-about {
   animation: none;
   background-color: #192A56; /* Set a fixed color for these elements */
 }
+.skills-list {
+  list-style-type: square;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-/* Existing styles for skills, certificates, etc. */
+.skill {
+  width: calc(25% - 10px); /* Adjust width to fit four skills in one line with some spacing */
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: #000;
+  color: 191970; 
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.connect {
+  margin-top: 20px;
+}
+
+.connect h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#connect {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+#connect h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#certificates {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+#certificates h2 {
+  margin-bottom: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificates-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.certificate-list {
+  list-style-type: decimal;
+  padding-left: 0;
+}
+
+.certificate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.certificate-info {
+  text-align: left;
+}
+
+.certificate-title {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.certificate-details {
+  margin-bottom: 10px;
+  color: #000;
+  white-space: pre-line;
+}
+
+.certificate-year,
+.certificate-issuer {
+  display: block;
+}
+
+.certificate-link {
+  text-decoration: none;
+  color: #0000EE;
+  font-weight: bold;
+}
 
 /* Projects */
 .project {
@@ -30,13 +121,18 @@ header,
   margin-bottom: 20px;
 }
 
-.project-image img {
-  max-width: 10%;
-  height: auto;
+.project-image {
+  width: 150px; /* Set a fixed width for project images */
+  height: 100px; /* Adjust the height as needed */
+  overflow: hidden; /* Hide any image overflow */
   border-radius: 5px;
-  /* Add any additional styling properties as needed */
 }
 
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Scale the image to cover the container */
+}
 .project-info {
   margin-left: 10px;
 }
@@ -50,29 +146,21 @@ header,
   color: #0000EE; /* Blue color for link */
 }
 
-/* Contact form */
-form input,
-form textarea {
-  display: block;
-  width: 100%;
+.linkedin-container {
+  display: inline-block;
+}
+
+.linkedin-link {
+  text-decoration: none;
+  color: #0000EE;
   padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #0000EE;
   border-radius: 4px;
 }
 
-form button {
-  display: block;
-  padding: 10px;
-  background-color: #2C3A47;
+.linkedin-link:hover {
+  background-color: #0000EE;
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #1E293B;
 }
 
 /* Global styles */
@@ -133,12 +221,34 @@ h1, h2, h3, h4, h5, h6 {
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
   color: #00FF00; 
 }
+/* Contact form */
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
-/* Additional styles for the contact section (if needed) */
+form button {
+  display: block;
+  padding: 10px;
+  background-color: #2C3A47;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1E293B;
+}
 
 footer {
   color: #fff;
   padding: 10px 0;
-  text-align: center;
+  text-align: centre;
   font-weight: bold;
 }
