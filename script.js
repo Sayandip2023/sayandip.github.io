@@ -31,7 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(function (response) {
             if (response.ok) {
-                alert("Message sent successfully!");
+                // Show confirmation message below the form
+                let confirmation = document.createElement('div');
+                confirmation.textContent = "Message sent successfully!";
+                confirmation.style.color = "green";
+                confirmation.style.marginTop = "10px";
+                confirmation.id = "confirmation-message";
+                document.getElementById("contact-form").after(confirmation);
+                setTimeout(() => {
+                    confirmation.remove();
+                }, 3000);
                 // Clear the form
                 document.getElementById("contact-form").reset();
             } else {
