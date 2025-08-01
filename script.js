@@ -1,103 +1,81 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const typedText = new Typed('#typed-text', {
-        strings: ['Learner','Developer', 'Deep Learning Engineer'], 
-        typeSpeed: 100, 
-        backSpeed: 50, 
-        loop: true // Whether to loop the animation
+    // Typed.js animation
+    if (document.getElementById('typed-text')) {
+        new Typed('#typed-text', {
+            strings: ['A Passionate Learner', 'A Full-Stack Developer', 'A Deep Learning Engineer'],
+            typeSpeed: 70,
+            backSpeed: 40,
+            loop: true
+        });
+    }
+
+    // Scroll-to-top button
+    const scrollToTopBtn = document.getElementById("scroll-to-top");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("visible");
+        } else {
+            scrollToTopBtn.classList.remove("visible");
+        }
     });
 
-
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form submission
-
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
-
-        if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-            alert("Please fill in all fields.");
-            return;
-        }
-
-        // Send form data to the server (you can replace the URL with your own endpoint)
-        var formData = new FormData();
-        formData.append("name", name);
-        formData.append("email", email);
-        formData.append("message", message);
-
-        fetch("path/to/your/endpoint", {
-            method: "POST",
-            body: formData
-        })
-        .then(function (response) {
-            if (response.ok) {
-                // Show confirmation message below the form
-                let confirmation = document.createElement('div');
-                confirmation.textContent = "Message sent successfully!";
-                confirmation.style.color = "green";
-                confirmation.style.marginTop = "10px";
-                confirmation.id = "confirmation-message";
-                document.getElementById("contact-form").after(confirmation);
-                setTimeout(() => {
-                    confirmation.remove();
-                }, 3000);
-                // Clear the form
-                document.getElementById("contact-form").reset();
-            } else {
-                alert("An error occurred. Please try again.");
-            }
-        })
-        .catch(function (error) {
-            console.error("Error:", error);
-            alert("An error occurred. Please try again.");
+    scrollToTopBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
         });
     });
-});
 
-$(document).ready(function () {
-  const body = $('body');
+    // Active navigation link highlighting
+    const navLinks = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll("section");
 
-  function setTransitionClass(className) {
-    body.removeClass('page-transition-entering page-transition-entered page-transition-exiting page-transition-exited');
-    body.addClass(className);
-  }
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 60) {
+                current = section.getAttribute("id");
+            }
+        });
 
-  function handleTransitionStart() {
-    setTransitionClass('page-transition-exiting');
-  }
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current)) {
+                link.classList.add("active");
+            }
+        });
+    });
 
-  function handleTransitionEnd() {
-    setTransitionClass('page-transition-entered');
-  }
+    // Fade-in animations for sections
+    const faders = document.querySelectorAll('.fade-in-section');
+    const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
 
-  $('a').click(function (e) {
-    if ($(this).attr('href').startsWith('#')) {
-      e.preventDefault();
-      const href = $(this).attr('href');
-      handleTransitionStart();
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            }
+            entry.target.classList.add('is-visible');
+            appearOnScroll.unobserve(entry.target);
+        });
+    }, appearOptions);
 
-      // Smoothly scroll to the target section
-      $('html, body').animate({
-        scrollTop: $(href).offset().top
-      }, 1000, function () {
-        handleTransitionEnd();
-      });
-    }
-  });
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
 
-  // Scroll-to-top button
-  const scrollButton = $('#scroll-to-top');
-
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-      scrollButton.fadeIn();
-    } else {
-      scrollButton.fadeOut();
-    }
-  });
-
-  scrollButton.click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
-    return false;
-  });
+    // Contact form submission
+    const contactForm = document.getElementById("contact-form");
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        // In a real application, you would handle the form submission here.
+        // For this template, we'll just show a confirmation message.
+        alert("Thank you for your message! I will get back to you soon.");
+        contactForm.reset();
+    });
 });
