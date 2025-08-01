@@ -6,6 +6,8 @@
     <title>Sayandip Bhattacharyya - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -20,8 +22,9 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hackathons">Hackathons</a></li>
                     <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="mailto:sayandip2019@gmail.com">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,25 +32,26 @@
 
     <main>
         <section id="about" class="fade-in-section hero-section">
+            <div id="particles-js-about" class="particles-js"></div>
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
                         <h2>Hello! I am Sayandip Bhattacharyya</h2>
                         <p>
-                            A passionate Computer Science Engineer specializing in Deep Learning, Natural Language Processing, and Computer Vision. I graduated with a B.Tech. in CSE from B.P. Poddar Institute of Management and Technology (MAKAUT) with an <b>8.79 DGPA</b>, following an excellent academic record in ISC (92%) and ICSE (96.4%).
+                            A passionate Computer Science Engineer specializing in Deep Learning, Natural Language Processing, and Computer Vision. I graduated with a B.Tech. in CSE from B.P. Poddar Institute of Management and Technology (MAKAUT) with an 8.79 DGPA, following an excellent academic record in ISC (92%) and ICSE (96.4%).
                         </p>
                         <p>
-                            My journey in AI research and engineering includes impactful internships at <b>HEVA AI</b> (developing neural networks for neurological disorder detection), <b>NIT Durgapur</b> (building citation network analysis and automated review systems using SciBERT and T5), and as a student researcher at B.P. Poddar Institute, where I designed state-of-the-art CNN architectures for digit recognition, malaria detection, and driver distraction detection.
+                            My journey in AI research and engineering includes impactful internships at HEVA AI (developing neural networks for neurological disorder detection), NIT Durgapur (building citation network analysis and automated review systems using SciBERT and T5), and as a student researcher at B.P. Poddar Institute, where I designed state-of-the-art CNN architectures for digit recognition, malaria detection, and driver distraction detection.
                         </p>
                         <p>
                             I have developed several innovative projects, such as a Q&A Agent System with document and web context using Gemini 2.0 Flash, a Text-to-SQL LLM, a Fake News Detection system leveraging transfer learning, and a Driver Monitoring System for micro-sleep and yawn detection.
                         </p>
                         <p>
-                            My research has been recognized at top conferences, with papers accepted at IEEE CIACON and AISC Springer Proceeding, including <b>BestNet</b> (MNIST recognition), <b>GlaucNet</b> (glaucoma detection), <b>GreenNet</b> (plant disease detection), and <b>CarNet</b> (driver monitoring). I have also won the SAP SITICOE Hackathon (1st place for LLM fine-tuning) and placed in the top 3 at the Jadavpur Deep Learning Hackathon.
+                            My research has been recognized at top conferences, with papers accepted at IEEE CIACON and AISC Springer Proceedings, including BestNet (for digit recognition), GlaucNet (for glaucoma detection),GreenNet (for plant disease detection), and CarNet (for driver distraction detection). I have also won the SAP Inside Track Kolkata ICOE Hackathon in April 2024 and placed in the top 3 at the Jadavpur Deep Learning Hackathon in March 2024.
                         </p>
                         <p>
                             My technical toolkit includes Python, TensorFlow, PyTorch, Scikit-Learn, GCP, HuggingFace, and Google Colab, with expertise in CNNs, LLMs, and both NLP and Computer Vision domains. I am always eager to collaborate, learn, and contribute to impactful AI solutions.
-                        </p>
+                        </p> 
                         <p class="typed-description"><span id="typed-text"></span></p>
                     </div>
                     <div class="hero-image">
@@ -59,6 +63,7 @@
         </section>
 
         <section id="resume" class="fade-in-section">
+            <div id="particles-js-resume" class="particles-js"></div>
             <div class="container">
                 <h2>My Resume</h2>
                 <p>You can view or download my latest resume below:</p>
@@ -67,6 +72,7 @@
         </section>
 
         <section id="what-i-do" class="fade-in-section">
+            <div id="particles-js-what-i-do" class="particles-js"></div>
             <div class="container">
                 <h2>What I Do</h2>
                 <div class="card-grid">
@@ -90,6 +96,7 @@
         </section>
 
         <section id="skills" class="fade-in-section">
+            <div id="particles-js-skills" class="particles-js"></div>
             <div class="container">
                 <h2>Skills</h2>
                 <div class="skills-category">
@@ -133,6 +140,7 @@
         </section>
           
         <section id="certifications" class="fade-in-section">
+            <div id="particles-js-certifications" class="particles-js"></div>
             <div class="container">
                 <h2>Certifications</h2>
                 <ul class="card-grid">
@@ -166,6 +174,7 @@
         </section>
 
         <section id="projects" class="fade-in-section">
+            <div id="particles-js-projects" class="particles-js"></div>
             <div class="container">
                 <h2>Projects</h2>
                 <div class="card-grid">
@@ -203,7 +212,29 @@
             </div>
         </section>
 
+        <section id="hackathons" class="fade-in-section">
+            <div id="particles-js-hackathons" class="particles-js"></div>
+            <div class="container">
+                <h2>Hackathons</h2>
+                <ul class="card-grid">
+                    <li class="card">
+                        <h3>SAP Inside Track Kolkata SIT ICOE Hackathon 2024 - 1st Place</h3>
+                        <p class="hackathon-details">April 2024 | Organized by SAP Inside Track Kolkata | Event: SIT ICOE Hackathon</p>
+                        <p>Our Secured 1st place for an automated essay grading solution, significantly boosting performance from the then-best 79% to S95% quadratic weighted kappa on the AES dataset, outperforming 400+ teams.</p>
+                        <a class="project-link" href="https://www.linkedin.com/posts/sayandip-bhattacharyya-0b6797238_siticoehackathon2024-firstplace-automatedessaygrading-activity-7190298104271626240-2IHt?utm_source=share&utm_medium=member_desktop&rcm=ACoAADs0XMoBtn-PHAkQ0ooDyZ66UThkbINXC88" target="_blank">Read More On SAP Community Kolkata Blog Posts</a>
+                    </li>
+                    <li class="card">
+                        <h3>SRIJAN, JADAVPUR UNIVERSITY's OpenAImer Machine Learning Hackathon - 3rd Place</h3>
+                        <p class="hackathon-details">March 2024 | Organized by Jadavpur University | Event: OpenAImer</p>
+                        <p>Achieved 3rd place in the OpenAImer Machine Learning event at SRIJAN, JADAVPUR UNIVERSITY's Tech-Fest.</p>
+                        <a class="project-link" href="https://www.linkedin.com/posts/codeclub-ju_openaimer-winners-activity-7178369552211214337-oaOC?utm_source=share&utm_medium=member_desktop&rcm=ACoAADs0XMoBtn-PHAkQ0ooDyZ66UThkbINXC88" target="_blank">Read More On CodeClub JU's LinkedIn Post</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
         <section id="publications" class="fade-in-section">
+            <div id="particles-js-publications" class="particles-js"></div>
             <div class="container">
                 <h2>Research Publications</h2>
                 <ul class="card-grid">
@@ -235,17 +266,7 @@
             </div>
         </section>
 
-        <section id="contact" class="fade-in-section">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <form id="contact-form">
-                    <input type="text" name="name" id="name" placeholder="Your Name" required>
-                    <input type="email" name="_replyto" id="email" placeholder="Your Email" required>
-                    <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
+        
     </main>
 
     <footer>
@@ -262,6 +283,7 @@
 
     <button id="scroll-to-top">&#8679;</button>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
