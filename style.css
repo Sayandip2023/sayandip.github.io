@@ -10,6 +10,7 @@
     --heading-color: #ffffff; /* White for headings */
     --shadow-color: rgba(0, 168, 255, 0.1);
     --border-color: #2a2a4a;
+    
 }
 
 /* Global Styles & Resets */
@@ -37,6 +38,8 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative; /* Ensure container is positioned for particle canvas */
+    z-index: 2; /* Ensure content is above particles */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -67,6 +70,18 @@ a:hover {
 section {
     padding: 6rem 0;
     border-bottom: 1px solid var(--border-color);
+    position: relative; /* Needed for absolute positioning of particles */
+    overflow: hidden; /* Hide overflowing particles */
+}
+
+/* Particles.js container */
+.particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Behind the content */
 }
 
 /* Header & Navigation */
@@ -90,12 +105,13 @@ header .container {
 header h1 {
     font-size: 1.8rem;
     margin: 0;
+    margin-left: -20px; /* Move name slightly left */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
 nav a {
@@ -153,6 +169,8 @@ nav a:hover, nav a.active {
     font-size: 1.2rem;
     margin-top: 1.5rem;
 }
+
+
 
 /* Card Layout */
 .card-grid {
