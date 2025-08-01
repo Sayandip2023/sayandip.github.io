@@ -1,237 +1,267 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayandip Bhattacharyya - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="script.js" defer></script>
-    <style>
-        header {
-            text-align: center;
-        }
-
-        h1 {
-            font-family: "Your-Font-Name", cursive;
-            font-size: 36px;
-            color: #333;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="container">
-                <h1>Sayandip Bhattacharyya</h1>
+        <div class="container">
+            <h1><a href="#">Sayandip Bhattacharyya</a></h1>
+            <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#what-i-do">What I Do</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <h2><span id="typed-text"></span></h2>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="fade-in-section hero-section">
             <div class="container">
-                <h2>About Me</h2>
-                <p>
-                  Hello! I am <b>Sayandip Bhattacharyya</b>, a passionate Computer Science Engineer specializing in Deep Learning, Natural Language Processing, and Computer Vision. I graduated with a B.Tech. in CSE from B.P. Poddar Institute of Management and Technology (MAKAUT) with an <b>8.79 DGPA</b>, following an excellent academic record in ISC (92%) and ICSE (96.4%).
-                </p>
-                <p>
-                  My journey in AI research and engineering includes impactful internships at <b>HEVA AI</b> (developing neural networks for neurological disorder detection), <b>NIT Durgapur</b> (building citation network analysis and automated review systems using SciBERT and T5), and as a student researcher at B.P. Poddar Institute, where I designed state-of-the-art CNN architectures for digit recognition, malaria detection, and driver distraction detection.
-                </p>
-                <p>
-                  I have developed several innovative projects, such as a Q&A Agent System with document and web context using Gemini 2.0 Flash, a Text-to-SQL LLM, a Fake News Detection system leveraging transfer learning, and a Driver Monitoring System for micro-sleep and yawn detection.
-                </p>
-                <p>
-                  My research has been recognized at top conferences, with papers accepted at IEEE CIACON and AISC (Springer Proceedings), including <b>BestNet</b> (MNIST recognition), <b>GlaucNet</b> (glaucoma detection), <b>GreenNet</b> (plant disease detection), and <b>CarNet</b> (driver monitoring). I have also won the SAP SITICOE Hackathon (1st place for LLM fine-tuning) and placed in the top 3 at the Jadavpur Deep Learning Hackathon.
-                </p>
-                <p>
-                  My technical toolkit includes Python, TensorFlow, PyTorch, Scikit-Learn, GCP, HuggingFace, and Google Colab, with expertise in CNNs, LLMs, and both NLP and Computer Vision domains. I am always eager to collaborate, learn, and contribute to impactful AI solutions.
-                </p>
-            </div>
-        </section>
-
-        <section id="skills" class="container">
-            <h2>Look at some of my skills!</h2>
-            <div class="skills-grid">
-              <ul class="skills-list">
-                <li class="skill">Python</li>
-                <li class="skill">TensorFlow</li>
-                <li class="skill">Pytorch</li>
-              </ul>
-            </div>
-          </section>
-          
-        <section id="certificates" class="container">
-            <h2>Here are some Certifications I have done!</h2>
-            <ul class="certificate-list">
-              <li class="certificate">
-                <div class="certificate-info">
-                  <h3 class="certificate-title">Programming Data Structures and Algorithms Using Python</h3>
-                  <p class="certificate-details">
-                    <span class="certificate-year"><strong>Issued in: April 2023</strong></span>
-                    <span class="certificate-issuer"><strong>Course by: IIT Madras</strong></span>
-                    <span class="certificate-issuer"><strong>Issued from: NPTEL</strong></span>
-                  </p>
-                  <a class="certificate-link" href="Programming Data Structures And Algorithms With Python.pdf" target="_blank">View Certificate (PDF)</a>
-                </div>
-              </li>
-              <li class="certificate">
-                <div class="certificate-info">
-                  <h3 class="certificate-title">Introduction to Machine Learning</h3>
-                  <p class="certificate-details">
-                    <span class="certificate-year"><strong>Issued in: November 2023</strong></span>
-                    <span class="certificate-issuer"><strong>Course by: IIT Madras</strong></span>
-                    <span class="certificate-issuer"><strong>Issued from: NPTEL</strong></span>
-                  </p>
-                  <a class="certificate-link" href="Introduction To Machine Learning.pdf" target="_blank">View Certificate (PDF)</a>
-                </div>
-              </li>
-              <li class="certificate">
-                <div class="certificate-info">
-                  <h3 class="certificate-title">Deep Learning</h3>
-                  <p class="certificate-details">
-                    <span class="certificate-year"><strong>Issued in: May 2024</strong></span>
-                    <span class="certificate-issuer"><strong>Course by: IIT Kharagpur</strong></span>
-                    <span class="certificate-issuer"><strong>Issued from: NPTEL</strong></span>
-                  </p>
-                  <a class="certificate-link" href="Deep Learning.pdf" target="_blank">View Certificate (PDF)</a>
-                </div>
-              </li>
-              <li class="certificate">
-                <div class="certificate-info">
-                  <h3 class="certificate-title">Cloud Computing</h3>
-                  <p class="certificate-details">
-                    <span class="certificate-year"><strong>Issued in: November 2024</strong></span>
-                    <span class="certificate-issuer"><strong>Course by: IIT Kharagpur</strong></span>
-                    <span class="certificate-issuer"><strong>Issued from: NPTEL</strong></span>
-                  </p>
-                  <a class="certificate-link" href="Cloud Computing.pdf" target="_blank">View Certificate (PDF)</a>
-                </div>
-              </li>
-              <li class="certificate">
-                <div class="certificate-info">
-                  <h3 class="certificate-title">Introduction To Large Language Models</h3>
-                  <p class="certificate-details">
-                    <span class="certificate-year"><strong>Issued in: May 2025</strong></span>
-                    <span class="certificate-issuer"><strong>Course by: IIT Madras</strong></span>
-                    <span class="certificate-issuer"><strong>Issued from: NPTEL</strong></span>
-                  </p>
-                  <a class="certificate-link" href="Introduction To Large Language Models.pdf" target="_blank">View Certificate (PDF)</a>
-                </div>
-              </li>
-            </ul>
-          </section>
-          
-        <section id="projects">
-            <div class="container">
-                <h2>Look at some of my interesting Projects!</h2>
-                <!-- Example project 1 -->
-                <div class="project">
-                    <div class="project-info">
-                        <h3 class="project-title">The Digit Classification Project</h3>
-                        <p class="project-description">
-                            A Deep Learning Project on Digit Classification. Takes an image of handwritten digits from 0-9 as input. Predicts the digit. The model is trained on the MNIST dataset. Data Augmentation is also applied. Involves the use of a Convolutional Neural Network.
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Hello! I am Sayandip Bhattacharyya</h2>
+                        <p>
+                            A passionate Computer Science Engineer specializing in Deep Learning, Natural Language Processing, and Computer Vision. I graduated with a B.Tech. in CSE from B.P. Poddar Institute of Management and Technology (MAKAUT) with an <b>8.79 DGPA</b>, following an excellent academic record in ISC (92%) and ICSE (96.4%).
                         </p>
-                        <a class="project-link" href="https://github.com/Sayandip2023/Digit-Classification-Project-using-Convolutional-Neural-Network.git" target="_blank">View Project</a>
+                        <p>
+                            My journey in AI research and engineering includes impactful internships at <b>HEVA AI</b> (developing neural networks for neurological disorder detection), <b>NIT Durgapur</b> (building citation network analysis and automated review systems using SciBERT and T5), and as a student researcher at B.P. Poddar Institute, where I designed state-of-the-art CNN architectures for digit recognition, malaria detection, and driver distraction detection.
+                        </p>
+                        <p>
+                            I have developed several innovative projects, such as a Q&A Agent System with document and web context using Gemini 2.0 Flash, a Text-to-SQL LLM, a Fake News Detection system leveraging transfer learning, and a Driver Monitoring System for micro-sleep and yawn detection.
+                        </p>
+                        <p>
+                            My research has been recognized at top conferences, with papers accepted at IEEE CIACON and AISC Springer Proceeding, including <b>BestNet</b> (MNIST recognition), <b>GlaucNet</b> (glaucoma detection), <b>GreenNet</b> (plant disease detection), and <b>CarNet</b> (driver monitoring). I have also won the SAP SITICOE Hackathon (1st place for LLM fine-tuning) and placed in the top 3 at the Jadavpur Deep Learning Hackathon.
+                        </p>
+                        <p>
+                            My technical toolkit includes Python, TensorFlow, PyTorch, Scikit-Learn, GCP, HuggingFace, and Google Colab, with expertise in CNNs, LLMs, and both NLP and Computer Vision domains. I am always eager to collaborate, learn, and contribute to impactful AI solutions.
+                        </p>
+                        <p class="typed-description"><span id="typed-text"></span></p>
+                    </div>
+                    <div class="hero-image">
+                        <!-- Placeholder for profile picture -->
+                        <img src="Image 1.jpg" alt="Sayandip Bhattacharyya Profile">
                     </div>
                 </div>
-                <!-- Example project 2 -->
-                <div class="project">
-                    <div class="project-info">
-                        <h3 class="project-title">The Iris Flower Species Classification Project</h3>
-                        <p class="project-description">
-                            A Project on the application of the Support Vector Machine Algorithm. Takes inputs on morphological features of an Iris Flower and predicts its species.
-                        </p>
-                        <a class="project-link" href="https://github.com/Sayandip2023/CBTCIP.git" target="_blank">View Project</a>
+            </div>
+        </section>
+
+        <section id="resume" class="fade-in-section">
+            <div class="container">
+                <h2>My Resume</h2>
+                <p>You can view or download my latest resume below:</p>
+                <a href="Sayandip_Bhattacharyya_Resume.pdf" target="_blank" class="resume-link">View Resume</a>
+            </div>
+        </section>
+
+        <section id="what-i-do" class="fade-in-section">
+            <div class="container">
+                <h2>What I Do</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <i class="fas fa-brain icon"></i>
+                        <h3>Deep Learning</h3>
+                        <p>Designing and implementing neural networks for complex problem-solving, including neurological disorder detection and image recognition.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-language icon"></i>
+                        <h3>Natural Language Processing</h3>
+                        <p>Building advanced NLP systems for citation network analysis, automated review, and Q&A agents using state-of-the-art models like SciBERT and T5.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-eye icon"></i>
+                        <h3>Computer Vision</h3>
+                        <p>Developing robust computer vision solutions for digit recognition, malaria detection, and driver monitoring systems using CNN architectures.</p>
                     </div>
                 </div>
-                <!-- Add more projects as needed -->
             </div>
-            
         </section>
 
-        <section id="publications" class="container">
-            <h2>Research Publications</h2>
-            <ul class="publication-list">
-                <li class="publication">
-                    <h3 class="publication-title">GreenNet: A Low-Cost Solution for Plant Disease Detection</h3>
-                    <p class="publication-details">
-                        <strong>Conference:</strong> International Conference on Artificial Intelligence & Sustainable Computing (AISC 2025), Springer Proceedings<br>
-                        <strong>Date:</strong> June 2025
-                    </p>
-                    <p>
-                        Presented a novel neural network architecture with just 1.1 million parameters and 4.54 MB size, achieving 99.75% accuracy on the Plant Village Dataset (54303 images, 38 classes). The model is ready for sustainable physical deployment. Shared insights and experiences from the conference.
-                    </p>
-                    <a class="publication-link" href="https://www.linkedin.com/posts/sayandip-bhattacharyya-0b6797238_aisc-greennet-aisc2025-activity-7354936405409648641-kQK1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADs0XMoBtn-PHAkQ0ooDyZ66UThkbINXC88" target="_blank">Read more on LinkedIn</a>
-                </li>
-                <li class="publication">
-                    <h3 class="publication-title">GlaucNet: A Novel and Computationally Sustainable Glaucoma Detection System</h3>
-                    <p class="publication-details">
-                        <strong>Conference:</strong> International Conference on Artificial Intelligence & Sustainable Computing (AISC 2025), Springer Proceedings<br>
-                        <strong>Date:</strong> June 2025
-                    </p>
-                    <p>
-                        Developed GlaucNet, a novel convolutional neural network for identifying glaucoma from retinal ocular images. Won the Best Poster Award at AISC 2025.
-                    </p>
-                    <a class="publication-link" href="https://www.linkedin.com/posts/sayandip-bhattacharyya-0b6797238_aisc2025-aisc2025-glaucnet-activity-7355116689451085827-OjI-?utm_source=share&utm_medium=member_desktop&rcm=ACoAADs0XMoBtn-PHAkQ0ooDyZ66UThkbINXC88" target="_blank">Read more on LinkedIn</a>
-                </li>
-                <li class="publication">
-                    <h3 class="publication-title">BestNet: Advancing MNIST Handwriting Recognition</h3>
-                    <p class="publication-details">
-                        <strong>Conference:</strong> IEEE International Conference on Computing, Intelligence and Application (CIACON 2025), Springer Proceedings<br>
-                        <strong>Date:</strong> June 2025
-                    </p>
-                    <p>
-                        Presented BestNet, a novel neural network that achieves state-of-the-art results on the MNIST dataset in terms of compute requirement, accuracy, and convergence speed.
-                    </p>
-                    <a class="publication-link" href="https://www.linkedin.com/posts/sayandip-bhattacharyya-0b6797238_ieee-ciacon-bestnet-activity-7352659644353335298-Pqy5?utm_source=share&utm_medium=member_desktop&rcm=ACoAADs0XMoBtn-PHAkQ0ooDyZ66UThkbINXC88" target="_blank">Read more on LinkedIn</a>
-                </li>
-                <li class="publication">
-                    <h3 class="publication-title">CarNet: An Innovative and Cost-Effective Driver Monitoring System</h3>
-                    <p class="publication-details">
-                        <strong>Conference:</strong> International Conference on Artificial Intelligence & Sustainable Computing (AISC 2024), Springer Proceedings<br>
-                        <strong>Date:</strong> June 2024
-                    </p>
-                    <p>
-                        Introduced CarNet, a novel CNN architecture for driver monitoring, achieving 99.94% accuracy with only 600,000 parameters. Presented at AISC 2024, Kolkata.
-                    </p>
-                    <a class="publication-link" href="https://www.linkedin.com/posts/sayandip-bhattacharyya-0b6797238_first-machinelearning-researchpaper-activity-7217856289584947200-jBrS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADs0XMoBtn-PHAkQ0ooDyZ66UThkbINXC88" target="_blank">Read more on LinkedIn</a>
-                </li>
-            </ul>
-        </section>
-                     
-
-        <section id="contact">
+        <section id="skills" class="fade-in-section">
             <div class="container">
-                <h2>Message Me</h2>
+                <h2>Skills</h2>
+                <div class="skills-category">
+                    <h3>Languages</h3>
+                    <div class="skills-grid">
+                        <span class="skill">Python</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skills-grid">
+                        <span class="skill">TensorFlow</span>
+                        <span class="skill">PyTorch</span>
+                        <span class="skill">Scikit-Learn</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Domains</h3>
+                    <div class="skills-grid">
+                        <span class="skill">NLP</span>
+                        <span class="skill">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Technologies</h3>
+                    <div class="skills-grid">
+                        <span class="skill">CNNs</span>
+                        <span class="skill">LLMs</span>
+                        <span class="skill">GCP</span>
+                        <span class="skill">Hugging Face</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools</h3>
+                    <div class="skills-grid">
+                        <span class="skill">Google Colaboratory</span>
+                        <span class="skill">Visual Studio Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+        <section id="certifications" class="fade-in-section">
+            <div class="container">
+                <h2>Certifications</h2>
+                <ul class="card-grid">
+                    <li class="card">
+                        <h3>Programming Data Structures and Algorithms Using Python</h3>
+                        <p class="certificate-details">Issued in: April 2023 | Course by: IIT Madras | Issued from: NPTEL</p>
+                        <a class="certificate-link" href="Programming Data Structures And Algorithms With Python.pdf" target="_blank">View Certificate</a>
+                    </li>
+                    <li class="card">
+                        <h3>Introduction to Machine Learning</h3>
+                        <p class="certificate-details">Issued in: November 2023 | Course by: IIT Madras | Issued from: NPTEL</p>
+                        <a class="certificate-link" href="Introduction To Machine Learning.pdf" target="_blank">View Certificate</a>
+                    </li>
+                    <li class="card">
+                        <h3>Deep Learning</h3>
+                        <p class="certificate-details">Issued in: May 2024 | Course by: IIT Kharagpur | Issued from: NPTEL</p>
+                        <a class="certificate-link" href="Deep Learning.pdf" target="_blank">View Certificate</a>
+                    </li>
+                    <li class="card">
+                        <h3>Cloud Computing</h3>
+                        <p class="certificate-details">Issued in: November 2024 | Course by: IIT Kharagpur | Issued from: NPTEL</p>
+                        <a class="certificate-link" href="Cloud Computing.pdf" target="_blank">View Certificate</a>
+                    </li>
+                    <li class="card">
+                        <h3>Introduction To Large Language Models</h3>
+                        <p class="certificate-details">Issued in: May 2025 | Course by: IIT Madras | Issued from: NPTEL</p>
+                        <a class="certificate-link" href="Introduction To Large Language Models.pdf" target="_blank">View Certificate</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-in-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Code Analyzer</h3>
+                        <p>A multi-language code analyzer and bug fixer web app using Gemini 2.5 Flash to help developers quickly understand, debug, and clean up source code.</p>
+                        <p class="project-technologies">Technologies: Gemini 2.5 Flash, Streamlit, Python</p>
+                        <a class="project-link" href="https://huggingface.co/spaces/Sayandip/Code_Analyzer" target="_blank">Test the App</a>
+                    </div>
+                    <div class="card">
+                        <h3>Q&A Agent System With Document Context And Web Context</h3>
+                        <p>A Q&A agent that processes multiple document formats and accesses the internet in real-time to provide comprehensive answers using Gemini 2.5 Flash.</p>
+                        <p class="project-technologies">Technologies: Gemini 2.5 Flash, Document Processing, Web Search</p>
+                        <a class="project-link" href="https://huggingface.co/spaces/Sayandip/GEN_AI_4" target="_blank">Test the App</a>
+                    </div>
+                    <div class="card">
+                        <h3>Text to SQL System</h3>
+                        <p>Implemented a LLM that can generate SQL from natural language queries, syntactically validate them, and run them on databases to obtain desired results.</p>
+                        <p class="project-technologies">Technologies: LLM, SQL, Database Interaction</p>
+                        <a class="project-link" href="#">View Project</a>
+                    </div>
+                    <div class="card">
+                        <h3>Fake News Detection</h3>
+                        <p>Built a fake news detection system using Transfer Learning on textual data.</p>
+                        <p class="project-technologies">Technologies: Transfer Learning, NLP, Textual Data</p>
+                        <a class="project-link" href="#">View Project</a>
+                    </div>
+                    <div class="card">
+                        <h3>Driver Monitoring System</h3>
+                        <p>Developed a model that can detect micro-sleep and yawning in drivers through videos.</p>
+                        <p class="project-technologies">Technologies: Computer Vision, Micro-sleep Detection, Yawn Detection</p>
+                        <a class="project-link" href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="fade-in-section">
+            <div class="container">
+                <h2>Research Publications</h2>
+                <ul class="card-grid">
+                    <li class="card">
+                        <h3>GreenNet: A Low-Cost Solution for Plant Disease Detection</h3>
+                        <p class="publication-details">Conference: AISC 2025, Springer Proceedings | Date: June 2025</p>
+                        <p>A novel neural network with 1.1M parameters achieving 99.75% accuracy on the Plant Village Dataset.</p>
+                        <a class="publication-link" href="https://www.linkedin.com/posts/sayandip-bhattacharyya-0b6797238_aisc-greennet-aisc2025-activity-7354936405409648641-kQK1?utm_source=share&utm_medium=member_desktop" target="_blank">Read More</a>
+                    </li>
+                    <li class="card">
+                        <h3>GlaucNet: A Novel and Computationally Sustainable Glaucoma Detection System</h3>
+                        <p class="publication-details">Conference: AISC 2025, Springer Proceedings | Date: June 2025</p>
+                        <p>Developed a CNN for identifying glaucoma from retinal images, winning the Best Poster Award at AISC 2025.</p>
+                        <a class="publication-link" href="https://www.linkedin.com/posts/sayandip-bhattacharyya-0b6797238_aisc2025-aisc2025-glaucnet-activity-7355116689451085827-OjI-?utm_source=share&utm_medium=member_desktop" target="_blank">Read More</a>
+                    </li>
+                    <li class="card">
+                        <h3>BestNet: Advancing MNIST Handwriting Recognition</h3>
+                        <p class="publication-details">Conference: IEEE CIACON 2025, Springer Proceedings | Date: June 2025</p>
+                        <p>Achieved state-of-the-art results on the MNIST dataset with a novel neural network.</p>
+                        <a class="publication-link" href="https://www.linkedin.com/posts/sayandip-bhattacharyya-0b6797238_ieee-ciacon-bestnet-activity-7352659644353335298-Pqy5?utm_source=share&utm_medium=member_desktop" target="_blank">Read More</a>
+                    </li>
+                    <li class="card">
+                        <h3>CarNet: An Innovative and Cost-Effective Driver Monitoring System</h3>
+                        <p class="publication-details">Conference: AISC 2024, Springer Proceedings | Date: June 2024</p>
+                        <p>A novel CNN architecture for driver monitoring with 99.94% accuracy and only 600,000 parameters.</p>
+                        <a class="publication-link" href="https://www.linkedin.com/posts/sayandip-bhattacharyya-0b6797238_first-machinelearning-researchpaper-activity-7217856289584947200-jBrS?utm_source=share&utm_medium=member_desktop" target="_blank">Read More</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in-section">
+            <div class="container">
+                <h2>Contact Me</h2>
                 <form id="contact-form">
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <textarea id="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send </button>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="_replyto" id="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
-        </section>
-
-        <section id="resume" class="container">
-            <h2>My Resume</h2>
-            <p>You can view or download my latest resume below:</p>
-            <a href="Sayandip_Bhattacharyya_Resume.pdf" target="_blank" class="resume-link" style="display:inline-block;padding:10px 20px;background:#192A56;color:#fff;border-radius:5px;text-decoration:none;font-weight:bold;margin-top:10px;">View Resume (PDF)</a>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Sayandip Bhattacharyya. All rights reserved.</p>
+            <p>&copy; 2025 Sayandip Bhattacharyya. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Sayandip-Bhattacharyya" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sayandip-bhattacharyya-0b6797238/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://huggingface.co/Sayandip" target="_blank" aria-label="Hugging Face"><img src="Image 2.png" alt="Hugging Face Logo" class="social-icon"></a>
+                <!-- Add more social links as needed -->
+            </div>
         </div>
     </footer>
-    <button id="scroll-to-top" style="display:none;position:fixed;bottom:30px;right:30px;z-index:1000;padding:10px 15px;font-size:18px;border:none;border-radius:50%;background:#333;color:#fff;cursor:pointer;">&#8679;</button>
+
+    <button id="scroll-to-top">&#8679;</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
