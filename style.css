@@ -351,8 +351,8 @@ footer {
 }
 
 .social-icon {
-    width: 38px; /* Match the new font-size of Font Awesome icons */
-    height: 38px; /* Match the new font-size of Font Awesome icons */
+    width: 48px; /* Increased size to visually match other icons */
+    height: 48px; /* Increased size to visually match other icons */
     object-fit: contain; /* Ensure image scales properly within its bounds */
 }
 
